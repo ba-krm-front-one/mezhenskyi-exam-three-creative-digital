@@ -223,7 +223,6 @@ a.ba-nav__link {
   color: grey;
 }
 
-
 .carousel-control.right {
   margin-right: -100px;
   background-image: none;
@@ -244,7 +243,6 @@ a.ba-nav__link {
   font-size: 20px;
   font-style: italic;
 }
-
 
 .ba-our-team {
   background-color: #ebebeb;;
@@ -298,13 +296,43 @@ a.ba-nav__link {
   }
 }
 
+.ba-container {
+  padding: 0;
+  position: relative;
+}
 
+.ba-contact-content {
+  position: relative;
+  padding: 55px 0;
+  background-color: rgba(159, 154, 207, 0.5);
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__title {
+    @extend .ba-title;
+    color: #ffffff;
+    margin-bottom: 270px;
+  }
+}
+.form-group {
+  width: 40%;
 
+}
+.form-control {
+  opacity: 0.5;
+  //margin-left: 30px;
+  //margin-bottom: 30px;
+}
 
+#map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
-
-
-
+}
 
 
 .ba-footer {

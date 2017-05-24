@@ -385,7 +385,7 @@ html {
 body, html {
   min-height: 100%; }
 
-.ba-title, a.ba-nav__link, .ba-banner__title, .ba-about-us-left__title, .ba-services-title__head, .ba-works__title, .ba-our-team__title, .ba-team-slider-item__title {
+.ba-title, a.ba-nav__link, .ba-banner__title, .ba-about-us-left__title, .ba-services-title__head, .ba-works__title, .ba-our-team__title, .ba-team-slider-item__title, .ba-contact-content__title {
   font-family: "Proxima Nova", sans-serif;
   font-size: 36px;
   font-weight: 600;
@@ -584,6 +584,34 @@ a.ba-nav__link {
     text-decoration: none; }
   .ba-team-social-icon__img:hover {
     transform: scale(1.2); }
+
+.ba-container {
+  padding: 0;
+  position: relative; }
+
+.ba-contact-content {
+  position: relative;
+  padding: 55px 0;
+  background-color: rgba(159, 154, 207, 0.5); }
+  .ba-contact-content__img {
+    margin-bottom: 20px; }
+  .ba-contact-content__title {
+    color: #ffffff;
+    margin-bottom: 270px; }
+
+.form-group {
+  width: 40%; }
+
+.form-control {
+  opacity: 0.5; }
+
+#map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
 
 .ba-footer {
   background-color: #9f9acf;
