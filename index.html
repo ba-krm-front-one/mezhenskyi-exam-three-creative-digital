@@ -8,8 +8,8 @@
 	<link rel="icon" href="favicon.png">
 	<link href="lib/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/styles/main.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="assets/styles/main.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,10 +40,10 @@
 						<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li><a class="ba-nav__link" href="#">home <span class="sr-only"></span></a></li>
-								<li><a class="ba-nav__link" href="#">about</a></li>
-								<li><a class="ba-nav__link" href="#">services</a></li>
-								<li><a class="ba-nav__link" href="#">works</a></li>
-								<li><a class="ba-nav__link" href="#">contact</a></li>
+								<li><a class="ba-nav__link" href="#ba-about-us">about</a></li>
+								<li><a class="ba-nav__link" href="#ba-services">services</a></li>
+								<li><a class="ba-nav__link" href="#ba-works">works</a></li>
+								<li><a class="ba-nav__link" href="#ba-contact">contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 	</div>
 </header>
 <main>
-	<section class="ba-about-us">
+	<section id="ba-about-us" class="ba-about-us">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-about-us-left text-center">
@@ -92,7 +92,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="ba-services">
+	<section id="ba-services" class="ba-services">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-services-graphic ba-services-description text-center">
@@ -147,7 +147,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="ba-works">
+	<section id="ba-works" class="ba-works">
 		<div class="container">
 			<header>
 				<img src="assets/img/icon-works.png" alt="works-logo" class="ba-works__logo center-block">
@@ -201,7 +201,7 @@
 			</footer>
 		</div>
 	</section>
-	<section class="ba-our-team">
+	<section id="ba-our-team" class="ba-our-team">
 		<div class="container">
 			<div class="row">
 				<header>
@@ -212,571 +212,490 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 						<div id="team-carousel-example-generic" class="carousel slide " data-ride="carousel"
 							 data-interval="5000">
+
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
+								<div class="container">
 								<div class="item active ">
 									<div class="row">
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
 
-											</div>
-										</div>
+											<img class="ba-team-slider-item__photo img-responsive "
+												 src="assets/img/team-person-one.jpg" alt="team-person-one">
 
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
-
+											<h4 class="ba-team-slider-item__title text-center">Miguel Obrien</h4>
+											<h5 class="ba-team-slider-item__subtitle text-center">CEO &amp; Founder</h5>
+											<div class="ba-team__social-icons text-center">
+												<ul class="ba-team-social-icon">
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-linked-in.svg"
+																 alt="linked-in-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-google.svg"
+																 alt="google-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-facebook.svg"
+																 alt="facebook-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-twitter.svg"
+																 alt="twitter-icon">
+														</a>
+													</li>
+												</ul>
 											</div>
 										</div>
 
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
-
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+											<img class="ba-team-slider-item__photo img-responsive "
+												 src="assets/img/team-person-two.jpg" alt="team-person-two">
+											<h4 class="ba-team-slider-item__title text-center">Jackie Carroll</h4>
+											<h5 class="ba-team-slider-item__subtitle text-center">Art Director</h5>
+											<div class="ba-team__social-icons text-center">
+												<ul class="ba-team-social-icon">
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-behance.svg"
+																 alt="behance-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-linked-in.svg"
+																 alt="linked-in-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-google.svg"
+																 alt="google-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-facebook.svg"
+																 alt="facebook-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-twitter.svg"
+																 alt="twitter-icon">
+														</a>
+													</li>
+												</ul>
 											</div>
 										</div>
 
-
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+											<img class="ba-team-slider-item__photo img-responsive "
+												 src="assets/img/team-person-three.jpg" alt="team-person-three">
+											<h4 class="ba-team-slider-item__title text-center">Ida Morrison</h4>
+											<h5 class="ba-team-slider-item__subtitle text-center">Designer</h5>
+											<div class="ba-team__social-icons text-center">
+												<ul class="ba-team-social-icon">
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-linked-in.svg"
+																 alt="linked-in-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-google.svg"
+																 alt="google-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-facebook.svg"
+																 alt="facebook-icon">
+														</a>
+													</li>
+													<li class="ba-team-social-icon__item">
+														<a class="ba-team-social-icon__link" href="">
+															<img class="ba-team-social-icon__img"
+																 src="assets/img/social-twitter.svg"
+																 alt="twitter-icon">
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
 									</div>
-
-
-									<!--<img class="ba-team-slider-item__photo" src="assets/img/team-person-one.jpg" alt="team-person-one">-->
-									<!--<h4 class="ba-team-slider-item__title">Miguel Obrien</h4>-->
-									<!--<h5 class="ba-team-slider-item__subtitle">CEO &amp; Founder</h5>-->
-									<!--<div class="ba-team__social-icons">-->
-									<!--<ul class="ba-team-social-icon">-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-linked-in.svg" alt="linked-in-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-google.svg" alt="google-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-facebook.svg" alt="facebook-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-twitter.svg" alt="twitter-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--</ul>-->
-									<!--</div>-->
 								</div>
-								<div class="item ">
-									<div class="row">
-
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</div>
-
-
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</div>
-
-
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</div>
-
-
-									</div>
-
-
-									<!--<img class="ba-team-slider-item__photo" src="assets/img/team-person-one.jpg" alt="team-person-one">-->
-									<!--<h4 class="ba-team-slider-item__title">Miguel Obrien</h4>-->
-									<!--<h5 class="ba-team-slider-item__subtitle">CEO &amp; Founder</h5>-->
-									<!--<div class="ba-team__social-icons">-->
-									<!--<ul class="ba-team-social-icon">-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-linked-in.svg" alt="linked-in-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-google.svg" alt="google-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-facebook.svg" alt="facebook-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-twitter.svg" alt="twitter-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--</ul>-->
-									<!--</div>-->
 								</div>
-								<div class="item  ">
-									<div class="row">
+								<!--<div class="item ">-->
+									<!--<div class="row">-->
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
+										<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">-->
 
-											</div>
-										</div>
+											<!--<img class="ba-team-slider-item__photo img-responsive "-->
+												 <!--src="assets/img/team-person-one.jpg" alt="team-person-one">-->
 
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
-
-											</div>
-										</div>
+											<!--<h4 class="ba-team-slider-item__title text-center">Miguel Obrien</h4>-->
+											<!--<h5 class="ba-team-slider-item__subtitle text-center">CEO &amp; Founder</h5>-->
+											<!--<div class="ba-team__social-icons text-center">-->
+												<!--<ul class="ba-team-social-icon">-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-linked-in.svg"-->
+																 <!--alt="linked-in-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-google.svg"-->
+																 <!--alt="google-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-facebook.svg"-->
+																 <!--alt="facebook-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-twitter.svg"-->
+																 <!--alt="twitter-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</div>-->
+										<!--</div>-->
 
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-											<div class="thumbnail">
-												<img src="assets/img/team-person-one.jpg" alt="team-person-one">
-											</div>
-											<div class="caption">
-												<h4>Miguel Obrien</h4>
-												<h5>CEO &amp; Founder</h5>
-												<div class="ba-team__social-icons">
-													<ul class="ba-team-social-icon">
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-linked-in.svg"
-																	 alt="linked-in-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-google.svg"
-																	 alt="google-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-facebook.svg"
-																	 alt="facebook-icon">
-															</a>
-														</li>
-														<li class="ba-team-social-icon__item">
-															<a class="ba-team-social-icon__link" href="">
-																<img class="ba-team-social-icon__img"
-																	 src="assets/img/social-twitter.svg"
-																	 alt="twitter-icon">
-															</a>
-														</li>
-													</ul>
-												</div>
+										<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">-->
+											<!--<img class="ba-team-slider-item__photo img-responsive "-->
+												 <!--src="assets/img/team-person-two.jpg" alt="team-person-two">-->
+											<!--<h4 class="ba-team-slider-item__title text-center">Jackie Carroll</h4>-->
+											<!--<h5 class="ba-team-slider-item__subtitle text-center">Art Director</h5>-->
+											<!--<div class="ba-team__social-icons text-center">-->
+												<!--<ul class="ba-team-social-icon">-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-behance.svg"-->
+																 <!--alt="behance-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-linked-in.svg"-->
+																 <!--alt="linked-in-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-google.svg"-->
+																 <!--alt="google-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-facebook.svg"-->
+																 <!--alt="facebook-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-twitter.svg"-->
+																 <!--alt="twitter-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</div>-->
+										<!--</div>-->
 
-											</div>
-										</div>
-
-
-									</div>
-
-
-									<!--<img class="ba-team-slider-item__photo" src="assets/img/team-person-one.jpg" alt="team-person-one">-->
-									<!--<h4 class="ba-team-slider-item__title">Miguel Obrien</h4>-->
-									<!--<h5 class="ba-team-slider-item__subtitle">CEO &amp; Founder</h5>-->
-									<!--<div class="ba-team__social-icons">-->
-									<!--<ul class="ba-team-social-icon">-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-linked-in.svg" alt="linked-in-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-google.svg" alt="google-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-facebook.svg" alt="facebook-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--<li class="ba-team-social-icon__item">-->
-									<!--<a class="ba-team-social-icon__link" href="">-->
-									<!--<img class="ba-team-social-icon__img"-->
-									<!--src="assets/img/social-twitter.svg" alt="twitter-icon">-->
-									<!--</a>-->
-									<!--</li>-->
-									<!--</ul>-->
+										<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">-->
+											<!--<img class="ba-team-slider-item__photo img-responsive "-->
+												 <!--src="assets/img/team-person-three.jpg" alt="team-person-three">-->
+											<!--<h4 class="ba-team-slider-item__title text-center">Ida Morrison</h4>-->
+											<!--<h5 class="ba-team-slider-item__subtitle text-center">Designer</h5>-->
+											<!--<div class="ba-team__social-icons text-center">-->
+												<!--<ul class="ba-team-social-icon">-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-linked-in.svg"-->
+																 <!--alt="linked-in-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-google.svg"-->
+																 <!--alt="google-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-facebook.svg"-->
+																 <!--alt="facebook-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-twitter.svg"-->
+																 <!--alt="twitter-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</div>-->
+										<!--</div>-->
 									<!--</div>-->
-								</div>
+								<!--</div>-->
+								<!--<div class="item ">-->
+									<!--<div class="row">-->
 
+										<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">-->
+
+											<!--<img class="ba-team-slider-item__photo img-responsive "-->
+												 <!--src="assets/img/team-person-one.jpg" alt="team-person-one">-->
+
+
+											<!--<h4 class="ba-team-slider-item__title text-center">Miguel Obrien</h4>-->
+											<!--<h5 class="ba-team-slider-item__subtitle text-center">CEO &amp; Founder</h5>-->
+											<!--<div class="ba-team__social-icons text-center">-->
+												<!--<ul class="ba-team-social-icon">-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-linked-in.svg"-->
+																 <!--alt="linked-in-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-google.svg"-->
+																 <!--alt="google-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-facebook.svg"-->
+																 <!--alt="facebook-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-twitter.svg"-->
+																 <!--alt="twitter-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</div>-->
+										<!--</div>-->
+
+
+										<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">-->
+											<!--<img class="ba-team-slider-item__photo img-responsive "-->
+												 <!--src="assets/img/team-person-two.jpg" alt="team-person-two">-->
+											<!--<h4 class="ba-team-slider-item__title text-center">Jackie Carroll</h4>-->
+											<!--<h5 class="ba-team-slider-item__subtitle text-center">Art Director</h5>-->
+											<!--<div class="ba-team__social-icons text-center">-->
+												<!--<ul class="ba-team-social-icon">-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-behance.svg"-->
+																 <!--alt="behance-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-linked-in.svg"-->
+																 <!--alt="linked-in-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-google.svg"-->
+																 <!--alt="google-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-facebook.svg"-->
+																 <!--alt="facebook-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-twitter.svg"-->
+																 <!--alt="twitter-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</div>-->
+										<!--</div>-->
+
+										<!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">-->
+											<!--<img class="ba-team-slider-item__photo img-responsive "-->
+												 <!--src="assets/img/team-person-three.jpg" alt="team-person-three">-->
+											<!--<h4 class="ba-team-slider-item__title text-center">Ida Morrison</h4>-->
+											<!--<h5 class="ba-team-slider-item__subtitle text-center">Designer</h5>-->
+											<!--<div class="ba-team__social-icons text-center">-->
+												<!--<ul class="ba-team-social-icon">-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-linked-in.svg"-->
+																 <!--alt="linked-in-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-google.svg"-->
+																 <!--alt="google-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-facebook.svg"-->
+																 <!--alt="facebook-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+													<!--<li class="ba-team-social-icon__item">-->
+														<!--<a class="ba-team-social-icon__link" href="">-->
+															<!--<img class="ba-team-social-icon__img"-->
+																 <!--src="assets/img/social-twitter.svg"-->
+																 <!--alt="twitter-icon">-->
+														<!--</a>-->
+													<!--</li>-->
+												<!--</ul>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</div>-->
+								<!--</div>-->
+
+								<!-- Controls -->
+								<a class="left carousel-control" href="#team-carousel-example-generic" role="button"
+								   data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#team-carousel-example-generic" role="button"
+								   data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
 							</div>
-
-							<!-- Controls -->
-							<a class="left carousel-control" href="#carousel-example-generic" role="button"
-							   data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="right carousel-control" href="#carousel-example-generic" role="button"
-							   data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
 						</div>
 					</div>
 				</section>
 			</div>
 		</div>
 	</section>
-	<section class="ba-contact">
+	<section id="ba-contact" class="ba-contact">
 		<div class="container-fluid ba-container">
 			<section id="map">
 			</section>
 			<section class="ba-contact-content ">
 				<img class="ba-contact-content__img center-block" src="assets/img/contact-icon.png" alt="contact-icon">
 				<div class="ba-contact-content__title text-center">get in touch</div>
-				<form class="form-inline ba-contact-content__form text-center">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="sr-only" for="name">Your Name *</label>
-								<input type="text" class="form-control" id="name" placeholder="Your Name *">
+				<div class="container ">
+					<form class="" method="post" action="">
+						<div class="row ">
+							<div class="col-md-4 ">
+								<div class="form-group text-center">
+									<label for="name"></label>
+									<input class="form-control" id="name" type="text" placeholder="Your Name *">
+								</div>
+							</div>
+							<div class="col-md-4 ">
+								<div class="form-group">
+									<label for="email"></label>
+									<input class="form-control" id="email" type="text" placeholder="Your Email *">
+								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="sr-only" for="email">Your Email *</label>
-								<input type="email" class="form-control" id="email" placeholder="Your Email *">
+						<div class="row ">
+							<div class="col-md-8 ">
+								<div class="form-group">
+									<textarea class="form-control" cols="5" rows="5"
+											  placeholder="Your Message *"></textarea>
+								</div>
 							</div>
+						</div>
+						<div class="row ">
+							<div class="form-group col-md-4">
+								<button type="submit" class="btn btn-default ba-contact-btn">send
+									message
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="ba-modal-container">
+					<div class="ba-modal">
+						<div class="ba-modal__icon ba-modal__icon--address"></div>
+						<div class="ba-modal__content">
+							<h5 class="ba-modal__title">Ikan Piranha Atas 220C Malang - East Java Indonesia</h5>
 						</div>
 					</div>
-					<br>
-					<textarea class="form-control" cols="300" rows="5" placeholder="Your Message *"></textarea>
-					<br>
-					<button type="submit" class="btn btn-default">Sign in</button>
-				</form>
+					<!-- END modal -->
+					<div class="ba-modal">
+						<div class="ba-modal__icon ba-modal__icon--phone"></div>
+						<div class="ba-modal__content">
+							<h5 class="ba-modal__title">+6281235966914</h5>
+						</div>
+					</div>
+					<!-- END modal -->
+				</div>
+				<!-- END modal-wrap -->
 			</section>
 
 		</div>
 	</section>
 </main>
-<footer class="ba-footer">
+<footer id="ba-footer" class="ba-footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -823,5 +742,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtz4HPqMUXCYdFMWAYrpYoD4OXBijWwFY&callback=initMap"
 		async defer></script>
 <script src="assets/scripts/map/map-script.js"></script>
+<script src="assets/scripts/scroll/scroll-script.js"></script>
 </body>
 </html>

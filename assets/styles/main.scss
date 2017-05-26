@@ -242,11 +242,13 @@ a.ba-nav__link {
   font-family: $secondary-font;
   font-size: 20px;
   font-style: italic;
+
 }
 
 .ba-our-team {
   background-color: #ebebeb;;
   padding: 54px 0 95px;
+
   &__logo {
     margin-bottom: 20px;
   }
@@ -259,12 +261,14 @@ a.ba-nav__link {
 
 .ba-team-slider-item {
   background-color: #ffffff;
-  padding: 160px 20px;
   position: relative;
+  padding:100px 0;
+  margin: 150px 12px 12px;
   &__photo {
-    position: absolute;
-    top: -30%;
-    left: 50%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    margin: -235px auto 0;
   }
   &__title {
     @extend .ba-title;
@@ -278,6 +282,10 @@ a.ba-nav__link {
     font-size: 24px;
     font-style: italic;
   }
+}
+
+.ba-team__social-icons {
+  background: #9f9acf;
 }
 
 .ba-team-social-icon {
@@ -314,14 +322,23 @@ a.ba-nav__link {
     margin-bottom: 270px;
   }
 }
-.form-group {
-  width: 40%;
 
-}
 .form-control {
+  border-radius: 4px 3px 3px 4px;
+  background-color: #ebebeb;
   opacity: 0.5;
-  //margin-left: 30px;
-  //margin-bottom: 30px;
+}
+
+.ba-contact-btn {
+  max-width: 293px;
+  max-height: 70px;
+  border-radius: 4px;
+  background-color: #9f9acf;
+  color: #ffffff;
+  font-family: $primary-font;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 #map {
@@ -334,6 +351,69 @@ a.ba-nav__link {
 
 }
 
+.ba-modal-container {
+  position: absolute;
+  right: 0;
+  top: 219px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ba-modal {
+  position: relative;
+  right: -258px;
+  width: 350px;
+  font-size: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    right: -2px;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 91px;
+    height: 91px;
+    cursor: pointer;
+    &--address {
+      background: #9f9acf url('../../assets/img/icon-address.png') 50% no-repeat;
+    }
+    &--phone {
+      background: #9f9acf url('../../assets/img/contact-phone.png') 50% no-repeat;
+
+    }
+  }
+  &__content {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 35px 15px 40px;
+    font-size: 18px;
+    width: 257px;
+    height: 91px;
+    font-weight: 400;
+    text-align: center;
+    color: #665f60;
+    background-color: rgba(235, 235, 235, 0.8);
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    width: 97%;
+  }
+
+}
 
 .ba-footer {
   background-color: #9f9acf;
@@ -364,6 +444,7 @@ a.ba-nav__link {
     transform: scale(1.2);
   }
 }
+
 
 
 
