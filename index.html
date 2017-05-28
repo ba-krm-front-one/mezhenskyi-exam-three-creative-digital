@@ -22,9 +22,9 @@
 <header>
 	<div class="container-fluid ba-header">
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ba-navbar-content">
 				<nav class="navbar navbar-default navbar-default-bg navbar-default-border ba-navbar">
-					<div class="container">
+					<div class="container-fluid">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
 									data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -49,13 +49,15 @@
 						</div>
 					</div>
 				</nav>
-				<section class="ba-banner text-center">
-					<h1 class="ba-banner__title">creative digital project</h1>
-					<p class="ba-banner__description">
-						Duis mollis, est non commodo luctus,<br>
-						nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-					</p>
-				</section>
+				<div class="container-fluid">
+					<section class="ba-banner text-center">
+						<h1 class="ba-banner__title">creative digital project</h1>
+						<p class="ba-banner__description">
+							Duis mollis, est non commodo luctus,<br>
+							nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+						</p>
+					</section>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -64,11 +66,11 @@
 	<section id="ba-about-us" class="ba-about-us">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-about-us-left text-center">
+				<div class="col-lg-4 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 ba-about-us-left text-center">
 					<img src="assets/img/icon-aboutus.png" alt="about-us">
 					<h4 class="ba-about-us-left__title img-responsive">about us</h4>
 				</div>
-				<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 ba-about-us-right pull-right">
+				<div class="col-lg-8 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 ba-about-us-right pull-right">
 					<div class="ba-about-us-right__text">
 						<p>
 							Nullam quis risus eget urna <span class="ba-about-us-right__text--bold">mollis
@@ -96,7 +98,8 @@
 	<section id="ba-services" class="ba-services">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-services-graphic ba-services-description text-center">
+				<div
+						class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ba-services-graphic ba-services-description text-center">
 					<img src="assets/img/icon-graphic.png" alt="graphic" class="ba-services-description__img">
 					<h4 class="ba-services-description__title">graphic design</h4>
 					<p class="ba-services-description__text">
@@ -116,7 +119,7 @@
 
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-services-web ba-services-description text-center">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ba-services-web ba-services-description text-center">
 					<img src="assets/img/icon-web.png" alt="web" class="ba-services-description__img">
 					<h4 class="ba-services-description__title">web development</h4>
 					<p class="ba-services-description__text">
@@ -134,7 +137,7 @@
 					</div>
 
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-services-title text-center">
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-services-title text-center">
 					<img class="ba-services-title__img center-block" src="assets/img/icon-services.png" alt="">
 					<h4 class="ba-services-title__head center-block">our services</h4>
 					<p class="ba-services-title__text center-block">
@@ -154,49 +157,51 @@
 				<img src="assets/img/icon-works.png" alt="works-logo" class="ba-works__logo center-block">
 				<h3 class="ba-works__title text-center">recent works</h3>
 			</header>
-			<section class="row">
-				<!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">-->
-				<div id="carousel-example-generic" class="carousel slide " data-ride="carousel"
-					 data-interval="5000">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-					</ol>
+			<div class="container">
+				<section class="row">
+					<!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">-->
+					<div id="carousel-example-generic" class="carousel slide " data-ride="carousel"
+						 data-interval="5000">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						</ol>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
+							</div>
+							<div class="item">
+								<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
+							</div>
+							<div class="item">
+								<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
+							</div>
+							<div class="item">
+								<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
+							</div>
 						</div>
-						<div class="item">
-							<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
-						</div>
-						<div class="item">
-							<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
-						</div>
-						<div class="item">
-							<img class="center-block" src="assets/img/works-slider-content.jpg" alt="...">
-						</div>
+
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button"
+						   data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button"
+						   data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
-
-
-					<!-- Controls -->
-					<a class="left carousel-control" href="#carousel-example-generic" role="button"
-					   data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#carousel-example-generic" role="button"
-					   data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-				<!--</div>-->
-			</section>
+					<!--</div>-->
+				</section>
+			</div>
 			<footer>
 				<button class="btn btn-default center-block ba-works-btn">View Gallery</button>
 			</footer>
@@ -210,7 +215,6 @@
 					<h3 class="ba-our-team__title text-center">meet our team</h3>
 				</header>
 				<section class="row">
-					<!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">-->
 					<div id="team-carousel-example-generic" class="carousel slide " data-ride="carousel"
 						 data-interval="5000">
 
@@ -220,7 +224,7 @@
 							<div class="item active">
 								<div class="container">
 									<div class="row">
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-one.jpg" alt="team-person-one">
@@ -266,7 +270,7 @@
 										</div>
 
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-two.jpg" alt="team-person-two">
@@ -318,7 +322,7 @@
 											</div>
 										</div>
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-three.jpg" alt="team-person-three">
@@ -375,7 +379,7 @@
 							<div class="item">
 								<div class="container">
 									<div class="row">
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-one.jpg" alt="team-person-one">
@@ -421,7 +425,7 @@
 										</div>
 
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-two.jpg" alt="team-person-two">
@@ -473,7 +477,7 @@
 											</div>
 										</div>
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-three.jpg" alt="team-person-three">
@@ -530,7 +534,7 @@
 							<div class="item">
 								<div class="container">
 									<div class="row">
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-one.jpg" alt="team-person-one">
@@ -576,7 +580,7 @@
 										</div>
 
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-two.jpg" alt="team-person-two">
@@ -628,7 +632,7 @@
 											</div>
 										</div>
 
-										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ba-team-slider-item">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ba-team-slider-item">
 											<div class="thumbnail">
 												<img class="ba-team-slider-item__photo img-responsive"
 													 src="assets/img/team-person-three.jpg" alt="team-person-three">
@@ -715,14 +719,16 @@
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 								<div class="form-group">
 									<label for="name"></label>
-									<input class="form-control" id="name" type="text" placeholder="Your Name *">
+									<input class="form-control input-lg" id="name" type="text"
+										   placeholder="Your Name *">
 								</div>
 
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 								<div class="form-group">
 									<label for="email"></label>
-									<input class="form-control" id="email" type="text" placeholder="Your Email *">
+									<input class="form-control input-lg" id="email" type="text"
+										   placeholder="Your Email *">
 								</div>
 							</div>
 						</div>
@@ -730,14 +736,15 @@
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<div class="form-group">
-								<textarea class="form-control" cols="5" rows="5"
+								<textarea class="form-control input-lg" rows="6"
 										  placeholder="Your Message *"></textarea>
 								</div>
 							</div>
 						</div>
 						<br>
 						<div class="row ">
-							<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-8 col-xs-12">
+							<div
+									class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12">
 
 								<button type="submit" class="btn ba-contact-btn btn-lg btn-block">send
 									message
@@ -828,5 +835,7 @@
 <script src="assets/scripts/map/map-script.js"></script>
 <script src="assets/scripts/scroll/scroll-script.js"></script>
 <script src="assets/scripts/scroll/scroll-up-script.js"></script>
+<script src="assets/scripts/media.js"></script>
+
 </body>
 </html>

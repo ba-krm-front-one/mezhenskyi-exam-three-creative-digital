@@ -394,7 +394,9 @@ body, html {
 .ba-header {
   background: #ada6c1 url("../../assets/img/header_bg.jpg") 50% no-repeat;
   background-size: cover;
-  padding: 55px 0 505px; }
+  padding: -15px;
+  padding-top: 55px;
+  padding-bottom: 498px; }
 
 .ba-navbar {
   background: transparent;
@@ -477,20 +479,21 @@ a.ba-nav__link {
 .ba-about-us-left {
   background: #cccae4 url("../../assets/img/about-us-bg.jpg") 50% no-repeat;
   background-size: cover;
-  padding: 75px 0 355px; }
+  padding: 75px 0 335px; }
   .ba-about-us-left__title {
-    margin-top: 75px;
+    margin-top: 40px;
     color: #fefbfc;
     font-size: 36px; }
 
 .ba-about-us-right {
-  padding: 76px 10px 100px 123px; }
+  padding: 70px 10px 80px 100px; }
   .ba-about-us-right__text {
     color: #665f60;
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
-    margin-bottom: 100px; }
+    margin-bottom: 85px; }
     .ba-about-us-right__text--bold {
       font-weight: 700; }
     .ba-about-us-right__text--italic {
@@ -503,24 +506,26 @@ a.ba-nav__link {
   color: #7d7a7c;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
-  font-style: italic; }
+  font-style: italic;
+  padding: 10px 50px; }
 
 .ba-services {
   background-color: #ebebeb; }
 
 .ba-services-title {
-  padding: 115px 0 428px;
+  padding: 110px 0 377px;
   background: #c1bfd9 url("../../assets/img/our-services-bg.jpg") 50% no-repeat;
   background-size: cover; }
   .ba-services-title__img {
     margin-bottom: 30px; }
   .ba-services-title__head {
     color: #fefcfd;
-    margin-bottom: 115px; }
+    margin-bottom: 105px; }
   .ba-services-title__text {
     color: #fefcfd;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
+    line-height: 24px;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 0; }
@@ -542,45 +547,55 @@ a.ba-nav__link {
   background-color: #ebebeb; }
 
 .ba-services-description {
-  padding-top: 100px; }
+  padding-top: 95px; }
   .ba-services-description__img {
-    margin-bottom: 30px; }
+    margin-bottom: 15px; }
   .ba-services-description__title {
     color: #665f60;
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   .ba-services-description__text {
     color: #665f60;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-style: italic;
-    margin-bottom: 135px; }
+    margin-bottom: 130px; }
+
+.ba-services-seo.ba-services-description,
+.ba-services-mobile.ba-services-description {
+  padding-top: 85px;
+  padding-bottom: 12px; }
 
 .ba-works {
   background: #b5b1d6 url("../../assets/img/works-bg.jpg") 50% no-repeat;
   background-size: cover;
-  padding: 50px 0 100px; }
+  padding: 50px 0 60px;
+  position: relative; }
   .ba-works__logo {
-    margin-bottom: 35px; }
+    margin-bottom: 30px; }
   .ba-works__title {
     color: #fefcfd;
-    margin-bottom: 65px; }
+    margin-bottom: 59px; }
 
-.carousel-control.left {
-  margin-left: -100px;
+a.left.carousel-control {
+  position: absolute;
+  width: 1%;
+  margin-left: -30px;
   background-image: none;
   color: grey; }
 
-.carousel-control.right {
-  margin-right: -100px;
+a.right.carousel-control {
+  position: absolute;
+  width: 1%;
+  margin-right: -30px;
   background-image: none;
   color: grey; }
 
 .carousel-indicators {
-  bottom: -80px; }
+  bottom: -70px; }
 
 .ba-works-btn {
   margin-top: 105px;
@@ -590,16 +605,17 @@ a.ba-nav__link {
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
-  font-style: italic; }
+  font-style: italic;
+  padding: 10px 50px; }
 
 .ba-our-team {
   background-color: #ebebeb;
-  padding: 54px 0 95px; }
+  padding: 54px 0 77px; }
   .ba-our-team__logo {
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
   .ba-our-team__title {
     color: #665f60;
-    margin-bottom: 65px; }
+    margin-bottom: 35px; }
 
 .thumbnail {
   padding: 0; }
@@ -620,16 +636,18 @@ a.ba-nav__link {
     color: #9f9acf;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 34px; }
+    margin-top: 40px;
+    margin-bottom: 20px; }
   .ba-team-slider-item__subtitle {
     color: #665f60;
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     font-style: italic;
-    margin-bottom: 50px; }
+    margin-bottom: 45px; }
 
 .ba-team__social-icons {
-  background: #9f9acf; }
+  background: #9f9acf;
+  padding: 5px 0; }
 
 .ba-team-social-icon {
   list-style: none;
@@ -652,15 +670,19 @@ a.ba-nav__link {
   padding: 55px 0;
   background-color: rgba(159, 154, 207, 0.5); }
   .ba-contact-content__img {
-    margin-bottom: 20px; }
+    margin-bottom: 18px; }
   .ba-contact-content__title {
     color: #ffffff;
-    margin-bottom: 270px; }
+    margin-bottom: 235px; }
 
 .form-control {
   border-radius: 4px 3px 3px 4px;
   background-color: #ebebeb;
-  opacity: 0.5; }
+  opacity: 0.5;
+  margin-bottom: 0; }
+
+.input-lg {
+  padding: 27px 15px !important; }
 
 .ba-form {
   max-width: 860px;
@@ -745,8 +767,8 @@ a.ba-nav__link {
   position: absolute;
   width: 84px;
   height: 84px;
-  right: 130px;
-  bottom: 130px;
+  right: 0;
+  bottom: 0;
   opacity: 0.5;
   outline: none;
   transition: all 0.2s ease-in-out;
@@ -779,3 +801,41 @@ a.ba-nav__link {
     text-decoration: none; }
   .ba-social-icon__img:hover {
     transform: scale(1.2); }
+
+@media (max-width: 1199px) {
+  a.left.carousel-control {
+    position: absolute;
+    width: 1%;
+    margin-left: 30px;
+    background-image: none;
+    color: grey; }
+  a.right.carousel-control {
+    position: absolute;
+    width: 1%;
+    margin-right: 30px;
+    background-image: none;
+    color: grey; }
+  .ba-services-title {
+    padding-bottom: 150px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ba-about-us-right {
+    margin-left: 170px;
+    padding-left: 0; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .ba-about-us-right {
+    margin-left: 120px;
+    padding-left: 0; } }
+
+@media (max-width: 767px) {
+  .ba-about-us-right {
+    margin-left: 0;
+    padding-left: 0; }
+  .ba-works-btn {
+    margin-top: 105px; }
+  .ba-scroll-top {
+    width: 50px;
+    height: 50px; }
+    .ba-scroll-top__icon {
+      margin: 15px auto 0; } }

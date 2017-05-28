@@ -49,7 +49,10 @@ body, html {
 .ba-header {
   background: $header-bg;
   background-size: cover;
-  padding: 55px 0 505px;
+  padding: 0 - 15px;
+  padding-top: 55px;
+  padding-bottom: 498px;
+
 }
 
 .ba-navbar {
@@ -153,23 +156,24 @@ a.ba-nav__link {
 .ba-about-us-left {
   background: $about-bg;
   background-size: cover;
-  padding: 75px 0 355px;
+  padding: 75px 0 335px;
   &__title {
     @extend .ba-title;
-    margin-top: 75px;
+    margin-top: 40px;
     color: #fefbfc;
     font-size: 36px;
   }
 }
 
 .ba-about-us-right {
-  padding: 76px 10px 100px 123px;
+  padding: 70px 10px 80px 100px;
   &__text {
     color: #665f60;
     font-family: $secondary-font;
     font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
     &--bold {
       font-weight: 700;
     }
@@ -187,6 +191,7 @@ a.ba-nav__link {
   font-family: $secondary-font;
   font-size: 20px;
   font-style: italic;
+  padding: 10px 50px;
 }
 
 .ba-services {
@@ -194,7 +199,7 @@ a.ba-nav__link {
 }
 
 .ba-services-title {
-  padding: 115px 0 428px;
+  padding: 110px 0 377px;
   background: $services-bg;
   background-size: cover;
   &__img {
@@ -203,12 +208,13 @@ a.ba-nav__link {
   &__head {
     @extend .ba-title;
     color: #fefcfd;
-    margin-bottom: 115px;
+    margin-bottom: 105px;
   }
   &__text {
     color: #fefcfd;
     font-family: $secondary-font;
     font-size: 18px;
+    line-height: 24px;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 0;
@@ -237,9 +243,9 @@ a.ba-nav__link {
 }
 
 .ba-services-description {
-  padding-top: 100px;
+  padding-top: 95px;
   &__img {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   &__title {
     color: #665f60;
@@ -247,45 +253,56 @@ a.ba-nav__link {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   &__text {
     color: #665f60;
     font-family: $secondary-font;
     font-size: 18px;
     font-style: italic;
-    margin-bottom: 135px;
+    margin-bottom: 130px;
   }
+}
+
+.ba-services-seo.ba-services-description,
+.ba-services-mobile.ba-services-description {
+  padding-top: 85px;
+  padding-bottom: 12px;
 }
 
 .ba-works {
   background: $works-bg;
   background-size: cover;
-  padding: 50px 0 100px;
+  padding: 50px 0 60px;
+  position: relative;
   &__logo {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   &__title {
     @extend .ba-title;
     color: #fefcfd;
-    margin-bottom: 65px;
+    margin-bottom: 59px;
   }
 }
 
-.carousel-control.left {
-  margin-left: -100px;
+a.left.carousel-control {
+  position: absolute;
+  width: 1%;
+  margin-left: -30px;
   background-image: none;
   color: grey;
 }
 
-.carousel-control.right {
-  margin-right: -100px;
+a.right.carousel-control {
+  position: absolute;
+  width: 1%;
+  margin-right: -30px;
   background-image: none;
   color: grey;
 }
 
 .carousel-indicators {
-  bottom: -80px;
+  bottom: -70px;
 }
 
 .ba-works-btn {
@@ -297,28 +314,31 @@ a.ba-nav__link {
   font-family: $secondary-font;
   font-size: 20px;
   font-style: italic;
-
+  padding: 10px 50px;
 }
 
 .ba-our-team {
   background-color: #ebebeb;
-  padding: 54px 0 95px;
+  padding: 54px 0 77px;
 
   &__logo {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   &__title {
     @extend .ba-title;
     color: #665f60;
-    margin-bottom: 65px;
+    margin-bottom: 35px;
   }
 }
-.thumbnail{
-  padding:0;
+
+.thumbnail {
+  padding: 0;
 }
+
 .caption {
-  padding:0 !important;
+  padding: 0 !important;
 }
+
 .ba-team-slider-item {
   background-color: #ebebeb;
   position: relative;
@@ -337,19 +357,21 @@ a.ba-nav__link {
     color: #9f9acf;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 34px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
   &__subtitle {
     color: #665f60;
     font-family: $secondary-font;
     font-size: 24px;
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
 .ba-team__social-icons {
   background: #9f9acf;
+  padding: 5px 0;
 }
 
 .ba-team-social-icon {
@@ -378,12 +400,12 @@ a.ba-nav__link {
   padding: 55px 0;
   background-color: rgba(159, 154, 207, 0.5);
   &__img {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   &__title {
     @extend .ba-title;
     color: #ffffff;
-    margin-bottom: 270px;
+    margin-bottom: 235px;
   }
 }
 
@@ -391,6 +413,11 @@ a.ba-nav__link {
   border-radius: 4px 3px 3px 4px;
   background-color: #ebebeb;
   opacity: 0.5;
+  margin-bottom: 0;
+}
+
+.input-lg {
+  padding: 27px 15px !important;
 }
 
 .ba-form {
@@ -494,8 +521,8 @@ a.ba-nav__link {
   position: absolute;
   width: 84px;
   height: 84px;
-  right: 130px;
-  bottom: 130px;
+  right: 0;
+  bottom: 0;
   opacity: 0.5;
   outline: none;
   transition: all 0.2s ease-in-out;
@@ -541,7 +568,58 @@ a.ba-nav__link {
 }
 
 
+@media (max-width: 1199px) {
+  a.left.carousel-control {
+    position: absolute;
+    width: 1%;
+    margin-left: 30px;
+    background-image: none;
+    color: grey;
+  }
+
+  a.right.carousel-control {
+    position: absolute;
+    width: 1%;
+    margin-right: 30px;
+    background-image: none;
+    color: grey;
+  }
+  .ba-services-title {
+    padding-bottom: 150px;
+  }
+}
 
 
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ba-about-us-right {
+    margin-left: 170px;
+    padding-left: 0;
+  }
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .ba-about-us-right {
+    margin-left: 120px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .ba-about-us-right {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .ba-works-btn {
+    margin-top: 105px;
+  }
+  .ba-scroll-top {
+    width: 50px;
+    height: 50px;
+    &__icon {
+      margin: 15px auto 0;
+
+    }
+  }
+}
+//col-lg-offset-4
