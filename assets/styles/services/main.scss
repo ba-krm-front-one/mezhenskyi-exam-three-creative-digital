@@ -1,0 +1,75 @@
+.ba-services {
+  background-color: #ebebeb;
+}
+
+.ba-services-title {
+  padding: 110px 0 377px;
+  background: $services-bg;
+  background-size: cover;
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__head {
+    @extend .ba-title;
+    color: #fefcfd;
+    margin-bottom: 105px;
+  }
+  &__text {
+    color: #fefcfd;
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 0;
+    :before {
+      content: open-quote;
+    }
+    :after {
+      content: close-quote;
+    }
+  }
+  &__author {
+    color: #fefcfd;
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.ba-services-graphic,
+.ba-services-mobile {
+  background-color: #dbdbdb;
+}
+
+.ba-services-seo {
+  background-color: #ebebeb;
+}
+
+.ba-services-description {
+  padding-top: 95px;
+  &__img {
+    margin-bottom: 15px;
+  }
+  &__title {
+    color: #665f60;
+    font-family: $secondary-font;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: #665f60;
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 130px;
+  }
+}
+
+.ba-services-seo.ba-services-description,
+.ba-services-mobile.ba-services-description {
+  padding-top: 85px;
+  padding-bottom: 12px;
+}

@@ -1,0 +1,146 @@
+.ba-container {
+  padding: 0;
+  position: relative;
+}
+
+.ba-contact-content {
+  position: relative;
+  padding: 55px 0;
+  background-color: rgba(159, 154, 207, 0.5);
+  &__img {
+    margin-bottom: 18px;
+  }
+  &__title {
+    @extend .ba-title;
+    color: #ffffff;
+    margin-bottom: 235px;
+  }
+}
+
+.form-control {
+  border-radius: 4px 3px 3px 4px;
+  background-color: #ebebeb;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+.input-lg {
+  padding: 27px 15px !important;
+}
+
+.ba-form {
+  max-width: 860px;
+  float: none;
+  margin: 0 auto;
+}
+
+.ba-contact-btn {
+  border-radius: 4px;
+  background-color: #9f9acf;
+  color: #ffffff;
+  font-family: $primary-font;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+
+}
+
+.btn-block {
+  float: none;
+  margin: 0 auto;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.ba-modal-container {
+  position: absolute;
+  right: 0;
+  top: 219px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ba-modal {
+  position: relative;
+  right: -258px;
+  width: 350px;
+  font-size: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    right: -2px;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 91px;
+    height: 91px;
+    cursor: pointer;
+    &--address {
+      background: #9f9acf url('../../assets/img/icon-address.png') 50% no-repeat;
+    }
+    &--phone {
+      background: #9f9acf url('../../assets/img/contact-phone.png') 50% no-repeat;
+
+    }
+  }
+  &__content {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 35px 15px 40px;
+    font-size: 18px;
+    width: 257px;
+    height: 91px;
+    font-weight: 400;
+    text-align: center;
+    color: #665f60;
+    background-color: rgba(235, 235, 235, 0.8);
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    width: 97%;
+  }
+
+}
+
+.ba-scroll-top {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  z-index: 2000;
+  background-color: #9f9acf;
+  &:hover {
+    opacity: 0.9;
+  }
+  &__icon {
+    margin: 30px auto 0;
+
+  }
+}
