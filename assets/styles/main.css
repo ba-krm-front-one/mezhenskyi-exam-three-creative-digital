@@ -368,15 +368,20 @@ th {
   box-shadow: none; }
 
 a.ba-nav__link {
-  font-size: 24px; }
-  a.ba-nav__link:hover {
-    color: red; }
+	font-size: 24px;
+	font-family: "Proxima Nova", sans-serif;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
 
 .navbar-default .navbar-nav > li > a {
   color: #ffffff; }
 
 .navbar-collapse {
-  border: none; }
+	border: none;
+	text-align: center;
+}
 
 .navbar-toggle {
   border: none;
@@ -427,10 +432,13 @@ a.ba-nav__link {
 .ba-banner {
   padding-top: 235px; }
   .ba-banner__title {
+	  font-family: "Proxima Nova", sans-serif;
     color: #fefefb;
     font-size: 72px;
     font-weight: 700;
-    margin-bottom: 10px; }
+	  margin-bottom: 10px;
+	  text-transform: uppercase;
+  }
   .ba-banner__description {
     color: #fefdfd;
     font-family: "PT Sans", sans-serif;
@@ -831,7 +839,7 @@ html {
 body, html {
   min-height: 100%; }
 
-.ba-title, a.ba-nav__link, .ba-banner__title, .ba-about-us-left__title, .ba-services-title__head, .ba-works__title, .ba-our-team__title, .ba-team-slider-item__title, .ba-contact-content__title {
+.ba-title, .ba-about-us-left__title, .ba-services-title__head, .ba-works__title, .ba-our-team__title, .ba-team-slider-item__title, .ba-contact-content__title {
   font-family: "Proxima Nova", sans-serif;
   font-size: 36px;
   font-weight: 600;

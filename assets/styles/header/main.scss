@@ -14,13 +14,13 @@
 }
 
 a.ba-nav__link {
-  @extend .ba-title;
-
   font-size: 24px;
-  &:hover {
-    color: red;
-  }
+  font-family: $primary-font;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
+
 
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
@@ -28,6 +28,7 @@ a.ba-nav__link {
 
 .navbar-collapse {
   border: none;
+  text-align: center;
 }
 
 .navbar-toggle {
@@ -88,11 +89,13 @@ a.ba-nav__link {
 .ba-banner {
   padding-top: 235px;
   &__title {
-    @extend .ba-title;
+    font-family: $primary-font;
     color: #fefefb;
     font-size: 72px;
     font-weight: 700;
     margin-bottom: 10px;
+    text-transform: uppercase;
+
   }
   &__description {
     color: #fefdfd;
