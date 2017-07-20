@@ -1,0 +1,46 @@
+.ba-works {
+  background: $works-bg;
+  background-size: cover;
+  padding: 50px 0 60px;
+  position: relative;
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__title {
+    @extend .ba-title;
+    color: #fefcfd;
+    margin-bottom: 59px;
+  }
+}
+
+a.left.carousel-control {
+  position: absolute;
+  width: 1%;
+  margin-left: -30px;
+  background-image: none;
+  color: grey;
+}
+
+a.right.carousel-control {
+  position: absolute;
+  width: 1%;
+  margin-right: -30px;
+  background-image: none;
+  color: grey;
+}
+
+.carousel-indicators {
+  bottom: -70px;
+}
+
+.ba-works-btn {
+  margin-top: 105px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px 50px;
+}

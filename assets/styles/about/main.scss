@@ -1,0 +1,48 @@
+.ba-about-us {
+  padding: 125px 0;
+  background-color: #ebebeb;
+}
+
+.ba-about-us-left {
+  background: $about-bg;
+  background-size: cover;
+  padding: 75px 0 335px;
+  &__title {
+    @extend .ba-title;
+    margin-top: 40px;
+    color: #fefbfc;
+    font-size: 36px;
+  }
+}
+
+.ba-about-us-right {
+  padding: 70px 10px 80px 100px;
+  &__text {
+    color: #665f60;
+    font-family: $secondary-font;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 85px;
+    &--bold {
+      font-weight: 700;
+    }
+    &--italic {
+      font-style: italic;
+    }
+  }
+}
+
+.ba-about-us__button {
+  border: 1px solid #7d7a7c;
+  border-radius: 0;
+  background-color: #ebebeb;
+  color: #7d7a7c;
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px 50px;
+  &:hover {
+    background: #9f9acf;
+  }
+}
